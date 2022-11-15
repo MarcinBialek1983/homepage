@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latam na sznurkach</title>
+    <link href="style.css/table.css" rel="stylesheet">
+    <link href="style.css/normalize.css" rel="stylesheet">
+    <link href="style.css/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script defer src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Latam na sznurkach</h1>
+        <form class="form js-form" action="https://postman-echo.com/">
+            <fieldset class="form__fieldset">
+                <legend class="form__legand">Dane osobowe</legend>
+                <p>
+                    <label class="form__label">Imię*(pola wymagane): <input class="form__labelText" autofocus
+                            name="name">
+                    </label>
+                </p>
+                <p>
+                    <label class="form__label">Nazwisko*: <input class="form__labelText" name="surname">
+                    </label>
+                </p>
+                <p>
+                    <label class="form__label">Adres email*: <input class="form__labelText" type="email" name="email">
+
+                    </label>
+                </p>
+                <p>
+                    <label class="form__label">Numer telefonu*:<input class="form__labelText" type="tel" name="tel">
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label>Ile metrów sznurka potrzebujesz: <input class="js-lenght" name="lenght" type="number"></label>
+            </p>
+            <p>
+                <button class="button js-buttonRoll">Oblicz ilość rolek</button>
+            </p>
+            <p>Powinieneś kupić: <strong class="js-roll">N/A</strong>
+            </p>
+
+            <table class="table">
+                <tbody>
+                    <caption>Rodzaje sznurków</caption>
+                    <tr>
+                        <th scope="col" class="table__desk table__desk--header">Kolor</th>
+                        <th scope="col" class="table__desk table__desk--header">Długość rolki</th>
+                        <th scope="col" class="table__desk table__desk--header">Cena za rolkę</th>
+                        <th scope="col" class="table__desk table__desk--header">Ilość rolek</th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="table__desk table__desk--red">Czerwony</th>
+                        <td class="table__desk table__desk--red">66 m</td>
+                        <td class="table__desk table__desk--red">20 zł</td>
+                        <td class="table__desk table__desk--red">
+                            <fieldset>
+                                <label><input class="js-red table__desk" name="ilość" type="number"></label>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="table__desk table__desk--green">Zielony</th>
+                        <td class="table__desk table__desk--green">66 m</td>
+                        <td class="table__desk table__desk--green">20 zł</td>
+                        <td class="table__desk table__desk--green">
+                            <fieldset>
+                                <label><input class="js-green table__desk" name="ilość" type="number"></label>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="table__desk table__desk--blue">Niebieski</th>
+                        <td class="table__desk table__desk--blue">66 m</td>
+                        <td class="table__desk table__desk--blue">25 zł</td>
+                        <td class="table__desk table__desk--blue">
+                            <fieldset>
+                                <label><input class="js-blue table__desk" name="ilość" type="number"></label>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="table__desk table__desk--grey">Szary</th>
+                        <td class="table__desk table__desk--grey">66 m</td>
+                        <td class="table__desk table__desk--grey">23 zł</td>
+                        <td class="table__desk table__desk--grey">
+                            <fieldset>
+                                <label><input class="js-grey table__desk" name="ilość" type="number"></label>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <p>Kwota za sznurki: <strong class="js-rollPay" type="reset" name="price">N/A</strong>
+            </p>
+            <p>
+                <label>Wybierz sposób dostawy:
+                    <select name="supplier">
+                        <option name="Osobisty">Osobisty</option>
+                        <option name="Kurier">Kurier</option>
+                        <option name="Inpost">Inpost</option>
+                        <option name="Poczta">Poczta</option>
+                    </select>
+
+                </label>
+            </p>
+            <p>
+                <button class="button js-button" type="reset">Wyczyść formularz</button>
+            </p>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Protokół</legend>
+                <p>
+                    <button class="form__button js-buttonSend" type="submit">Wyślij zamówienie</button>
+                </p>
+
+            </fieldset>
+            <P>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

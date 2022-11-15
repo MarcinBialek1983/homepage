@@ -1,0 +1,35 @@
+.table__desk {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.table {
+    border-collapse: collapse;
+    max-width: 600px;
+    overflow-x: auto;
+}
+
+.table__desk--red {
+    background-color: #ff00008c;
+    color: antiquewhite;
+}
+
+.table__desk--green {
+    background-color: #00800073;
+    color: antiquewhite;
+}
+
+.table__desk--blue {
+    background-color: #0000ff6b;
+    color: antiquewhite;
+}
+
+.table__desk--grey {
+    background-color: #808080c4;
+    color: antiquewhite;
+}
+
+.table__desk--header {
+    background-color: #808080c4;
+}
