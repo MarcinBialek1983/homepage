@@ -4,6 +4,6 @@
 
 ![Marcin](https://github.com/MarcinBialek1983/homepage/blob/main/image/Marcin.Bia%C5%82ek.JPG)
 
-### This is ma demo:
+### This is my demo:
 
 https://marcinbialek1983.github.io/homepage/
