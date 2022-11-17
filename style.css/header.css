@@ -1,0 +1,27 @@
+.header {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.header__img {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: #00adff24;
+}
+
+.footer__listItem {
+    margin: 10px;
+    list-style: none;
+}
+
+.button {
+    margin-left: 250px;
+    background-color: #0000ff47;
+    border-radius: 20px;
+}
+
+

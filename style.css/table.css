@@ -1,0 +1,28 @@
+.table {
+    border-collapse: collapse;
+    width: auto;
+}
+
+.table__caption {
+    color: #795548cf;
+    font-size: 30px;
+}
+
+.table__cell {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    color: hsl(0, 100%, 55%);
+}
+
+.table__header {
+    background-color: #80808059;
+}
+
+.table__image {
+    background-color: #80808059;
+}
+
+.table__row:hover {
+    background-color: hsla(338, 83%, 60%, 0.164);
+}
