@@ -1,4 +1,4 @@
-console.log("Cześć Wszystkim!");
+console.log("Cześć Wszystkim Bardzo Serdecznie!");
 let button = document.querySelector(".button");
 let body = document.querySelector(".body");
 let themeName = document.querySelector(".themeName");
