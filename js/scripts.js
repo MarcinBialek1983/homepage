@@ -1,19 +1,19 @@
-let lenghtElement = document.querySelector(".js-lenght");
-let rollElement = document.querySelector(".js-roll");
-let formElement = document.querySelector(".js-form");
-let redElement = document.querySelector(".js-red");
-let greenElement = document.querySelector(".js-green");
-let blueElement = document.querySelector(".js-blue");
-let greyElement = document.querySelector(".js-grey");
-let rollPayElement = document.querySelector(".js-rollPay");
-let buttonElement = document.querySelector(".js-button");
-let buttonSendElement = document.querySelector(".js-buttonSend");
+const lenghtElement = document.querySelector(".js-lenght");
+const rollElement = document.querySelector(".js-roll");
+const formElement = document.querySelector(".js-form");
+const redElement = document.querySelector(".js-red");
+const greenElement = document.querySelector(".js-green");
+const blueElement = document.querySelector(".js-blue");
+const greyElement = document.querySelector(".js-grey");
+const rollPayElement = document.querySelector(".js-rollPay");
+const buttonElement = document.querySelector(".js-button");
+const buttonSendElement = document.querySelector(".js-buttonSend");
 
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let lenght = lenghtElement.value;
-    let roll = lenght / 66;
+    const lenght = lenghtElement.value;
+    const roll = lenght / 66;
     rollElement.innerText = Math.ceil(roll);
 
 })
@@ -21,14 +21,14 @@ formElement.addEventListener("submit", (event) => {
 formElement.addEventListener("input", (event) => {
     event.preventDefault();
 
-    let red = redElement.value;
-    let green = greenElement.value;
-    let blue = blueElement.value;
-    let grey = greyElement.value;
+    const red = redElement.value;
+    const green = greenElement.value;
+    const blue = blueElement.value;
+    const grey = greyElement.value;
 
 
 
-    let rollPay = green * 20 + red * 20 + blue * 25 + grey * 23;
+    const rollPay = green * 20 + red * 20 + blue * 25 + grey * 23;
     rollPayElement.innerText = (rollPay);
 
 })
