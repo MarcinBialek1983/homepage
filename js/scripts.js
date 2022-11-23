@@ -1,3 +1,8 @@
+const welcome = () => {
+    console.log("Witam wszystkich serdecznie");
+}
+
+
 const lenghtElement = document.querySelector(".js-lenght");
 const rollElement = document.querySelector(".js-roll");
 const formElement = document.querySelector(".js-form");
