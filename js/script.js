@@ -1,22 +1,26 @@
 {
     const welcome = () => {
         console.log("Witam Wsyztskich Bardzo serdecznie!");
-    }
-    welcome();
+    };
 
-    const button = document.querySelector(".button");
-    const themeName = document.querySelector(".themeName");
-    const body = document.querySelector(".body");
+    const toggleBackground = () => {
+        const changeButtonText = document.querySelector(".js-changeButtonText");
+        const body = document.querySelector(".body");
 
-    button.addEventListener("click", () => {
-      body.classList.toggle("body--dark");
+        body.classList.toggle("body--dark");
 
-        if (body.classList.contains("body--dark")) {
+        changeButtonText.innerText = body.classList.contains("body--dark") ? "jasne" : "ciemne";
+    };
 
-            themeName.innerText = "jasne";
-        } else {
-            themeName.innerText = "ciemne";
-        }
-    });
+    const init = () => {
+        const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
+        changeBackgroundButton.addEventListener("click", toggleBackground);
 
+        welcome();
+    };
+
+    init();
 }
+
+
+

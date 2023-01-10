@@ -7,3 +7,10 @@
 ### This is my demo:
 
 https://marcinbialek1983.github.io/homepage/
+
+## Technologies used in the project:
+
+- HTML
+- CSS
+- JavaScript
+- BEM convention
