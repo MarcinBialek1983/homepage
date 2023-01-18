@@ -1,26 +1,24 @@
 {
-    const welcome = () => {
-        console.log("Witam Wsyztskich Bardzo serdecznie!");
+    const welcom = () => {
+        console.log("Witam wszystkich")
     };
 
     const toggleBackground = () => {
-        const changeButtonText = document.querySelector(".js-changeButtonText");
-        const body = document.querySelector(".body");
 
-        body.classList.toggle("body--dark");
+            const body = document.querySelector(".js-body");
+            const buttonText = document.querySelector(".js-changeButtonText");
 
-        changeButtonText.innerText = body.classList.contains("body--dark") ? "jasne" : "ciemne";
-    };
+            body.classList.toggle("body-dark");
 
-    const init = () => {
-        const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
-        changeBackgroundButton.addEventListener("click", toggleBackground);
+            buttonText.innerHTML = body.classList.contains("body--dark") ? "jasne" : "ciemne";
+        }
+        const init = () => {
+            const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
 
-        welcome();
-    };
+            changeBackgroundButton.addEventListener("click", toggleBackground);
 
-    init();
-}
-
-
-
+            welcom();
+        };
+        init();
+    }
+        
